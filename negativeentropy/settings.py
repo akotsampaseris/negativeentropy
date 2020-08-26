@@ -95,7 +95,7 @@ EMAIL_USE_TLS = config.getboolean('email', 'EMAIL_USE_TLS')
 
 DATABASES = {
     'default': {
-        'ENGINE': config.get('db', 'ENGINE'),
+        'ENGINE': 'django.db.backends.' + config.get('db', 'ENGINE'),
         'NAME': config.get('db', 'NAME'),
         'USER': config.get('db', 'USER'),
         'PASSWORD': config.get('db', 'PASSWORD'),
