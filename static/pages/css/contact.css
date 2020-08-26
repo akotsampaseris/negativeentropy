@@ -1,0 +1,36 @@
+.page-title{
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-section-header{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-info-tagline{
+  color: #f72f2f;
+}
+
+.contact-info-message{
+  text-align: justify;
+}
+
+.contact-info-social{
+  padding-left: 10px;
+}
+
+.contact-info-social-icon{
+  color: #f72f2f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contact-info-social-link{
+  color: #fff;
+  font-weight: 700;
+}
+
+.contact-info-image{
+
+}

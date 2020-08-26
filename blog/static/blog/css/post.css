@@ -1,0 +1,16 @@
+.post-title{
+  text-align: center;
+}
+
+.post-meta{
+  text-align: center;
+  font-size: 14px;
+}
+
+.post-meta a{
+    color: #f72f2f;
+}
+
+.post-text{
+  text-align: justify;
+}

@@ -1,0 +1,143 @@
+.cv-info{
+  padding: 10px;
+  margin: 10px;
+}
+
+.cv-name{
+}
+
+.cv-tagline{
+  color: #f72f2f;
+}
+
+.cv-social-icon{
+  color: #f72f2f;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cv-social-link{
+  margin-right: 30px;
+  padding-left:  5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.section-header{
+  color: #9b6b6b;
+}
+
+.section-item{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.section-item-header{
+
+}
+
+.subsection-header{
+  color: #f72f2f;
+  font-weight: 900;
+}
+
+.section-item-employer{
+  color: #f72f2f;
+  display: block;
+  font-weight: 900;
+}
+
+.section-item-date{
+  color: #9f9f9f;
+  display: inline-block;
+}
+
+.section-item-location{
+  color: #9f9f9f;
+  display: inline-block;
+  padding-left: 100px;
+}
+
+.section-item-courses{
+  color: #fff;
+  display: block;
+}
+
+.section-item-thesis{
+  color: #fff;
+  display: block;
+}
+
+.section-item-supervisor{
+  color: #9f9f9f;
+  display: block;
+}
+
+.section-item-text{
+  color: #fff;
+  display: block;
+}
+
+.section-list-item-main{
+  color: #fff;
+  font-weight: 700;
+}
+
+.section-list-item-secondary{
+  color: #9f9f9f;
+  font-weight: 500;
+}
+
+.skill-title{
+  color: #f72f2f;
+  font-weight: 700;
+}
+
+.skill-text{
+  color: #fff;
+  font-weight: 500;
+}
+
+.strength-row{
+  margin: 10px;
+}
+
+.strength{
+  padding: 5px;
+  color: #9f9f9f;
+  font-weight: 700;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+}
+
+.interest-row{
+  display: block;
+}
+
+.interest-title{
+  color: #f72f2f;
+  font-weight: 700;
+}
+
+.language-name{
+  color: #fff;
+  font-weight: 700;
+}
+
+.language-percent-group{
+  float: right;
+}
+
+.language-percent-full{
+  color: #f72f2f;
+}
+
+.language-percent-empty{
+  color: #9f9f9f;
+}

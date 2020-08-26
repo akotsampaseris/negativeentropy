@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="background-color: #1d1d1d !important;">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'pages:home' %}">
+      <img src="/media/negativeentropy/images/tne-logo.png" alt="negativeEntropy" width="200">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="nav-item nav-link text-white" href="{% url 'pages:about' %}">About me</a>
+      <a class="nav-item nav-link text-white" href="{% url 'blog:index' %}">Blog</a>
+      <a class="nav-item nav-link text-white" href="{% url 'portfolio:index' %}">Portfolio</a>
+      <a class="nav-item nav-link text-white" href="{% url 'cv:index' %}">CV</a>
+      <a class="nav-item nav-link text-white" href="{% url 'pages:contact' %}">Contact</a>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1 class="page-title">Blog</h1>
+<div class="row">
+{% for post in posts %}
+  <div class="col-md-3">
+    <div class="post">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{% url 'blog:post' post.slug %}"><img src="{{ post.image.url }}" alt="{{post.title}}"></a>
+      </div>
+      {% endif %}
+      <h4 class="post-title"><a href="{% url 'blog:post' post.slug %}">{{post.title}}</a></h4>
+      <div class="post-meta">
+        <span>Category: <a class="post-category" href="{% url 'blog:category' post.category.slug %}">{{post.category}}</a></span>
+        <span>|</span>
+        <span>Date: {{post.created_at | date:"d/m/y"}}</span>
+      </div>
+      <hr>
+      <div class="post-text">{{post.text | safe | slice:":170"}}...</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

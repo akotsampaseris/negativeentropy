@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'cv/css/cv.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="cv-info">
+  <h1 class="cv-name">Antonios Kotsampaseris</h1>
+  <h2 class="cv-tagline">Theoretical Physicist | Full-Stack Web Developer</h2>
+  <i class="fa fa-at cv-social-icon"></i><a class="cv-social-link" href="mailto:a.kotsampaseris@gmail.com">a.kotsampaseris@gmail.com</a>
+  <i class="fa fa-linkedin-square cv-social-icon"></i><a class="cv-social-link" href="https://linkedin.com/akotsampaseris">akotsampaseris</a>
+  <i class="fa fa-github cv-social-icon"></i><a class="cv-social-link" href="https://github.com/thenegativeentropy">thenegativeentropy</a>
+</div>
+
+<div class="section">
+  <h3 class="section-header">PERSONAL SUMMARY</h3>
+  <hr>
+  <span class="section-item-text">Hard-working and motivated self-taught Full-Stack Web Developer, with advanced studies in Theoretical and Mathematical Physics. I have worked along several remarkable scientists and conducted research under their supervision, which led to the publication of papers in peer-reviewed journals and presenting our work in international conferences. My life-long passion for technology has pushed me to learn some of the most modern programming languages and implement them in my own ideas of web-apps. The work experience I have acquired has helped to solidify my enthusiasm for programming and apply my knowledge on professional applications for important clients with very strict deadlines. Along the years I have demonstrated that I am able to handle complicated abstract concepts, learn new technologies and adapt instantly into new working habits, and I am certain that I would be an asset to every team.</span>
+</div>
+
+<!-- Column 1 -->
+<div class="row">
+  <div class="col-sm">
+    <div class="section">
+      <h3 class="section-header">WORK EXPERIENCE</h3>
+      <hr>
+      <div class="section-item">
+        <h5 class="section-item-header">Full-Stack Web Developer & Server Admin</h5>
+        <span class="section-item-employer">TechnoLogic LTD</span>
+        <span class="section-item-date">Sept 2017 - Aug 2020</span>
+        <span class="section-item-location">Chalkis, Greece</span>
+        <span class="section-item-text">I started as a Junior Developer, maintaining Wordpress websites for corporate accounts, but I was quickly promoted to Full-Stack Web Developer and Server Admin, writing code both in the back-end and the front-end of applications built in a variety of technologies, creating new websites from scratch, and being solely responsible for the dedicated servers that hosted our websites. I gained valuable experience working closely with clients, meeting deadlines and learning on the spot, and I became comfortable with progressively holding more and more responsibilities.</span>
+      </div>
+
+      <div class="section-item">
+        <h5 class="section-item-header">Year-2 Statistical Physics Tutor</h5>
+        <span class="section-item-employer">University of Birmingham</span>
+        <span class="section-item-date">Jan 2019 - May 2019</span>
+        <span class="section-item-location">Birmingham, UK</span>
+        <span class="section-item-text">Statistical Physics Tutor for 2nd-Year students in the University of Birmingham. I was responsible for helping students solve tutorial problems, assisting them with difficult concepts in Physics and Mathematics, and marking their solutions. During this appointment I improved my communication skills and I learned how to be patient and sensitive with each student's learning pace.</span>
+      </div>
+
+      <div class="section-item">
+        <h5 class="section-item-header">Year-1 Statistical Physics Tutor</h5>
+        <span class="section-item-employer">University of Birmingham</span>
+        <span class="section-item-date">Oct 2018 - Jan 2019</span>
+        <span class="section-item-location">Birmingham, UK</span>
+        <span class="section-item-text">Lab Assistant for 1st-Year Experimental Physics students in the University of Birmingham. I was there to help students working with complicated and sometimes dangerous equipment, to answer questions about setting up experiments and explain physical laws, along with marking their weekly reports and their final projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="col-sm">
+    <div class="section">
+      <h3 class="section-header">PROGRAMMING SKILLS</h3>
+      <hr>
+      <span class="skill-title">Main Languages: </span><span class="skill-text">Python, PHP, JavaScript</span><br>
+      <span class="skill-title">Back-End: </span><span class="skill-text">Django, Flask, Laravel</span><br>
+      <span class="skill-title">Front-End: </span><span class="skill-text">React.js, HTML5, CSS3, Bootstrap4</span><br>
+      <span class="skill-title">APIs: </span><span class="skill-text">GraphQL, Graphene, Django REST Framework</span><br>
+      <span class="skill-title">DBs: </span><span class="skill-text">MS SQL Server, MySQL, MongoDB</span><br>
+      <span class="skill-title">CMSs: </span><span class="skill-text">Wordpress, Joomla, Wix</span><br>
+    </div>
+
+    <div class="section">
+      <h3 class="section-header">STRENGTHS</h3>
+      <hr>
+      <div class="strength-row">
+        <span class="strength">problem-solver</span>
+        <span class="strength">fast-learner</span>
+        <span class="strength">adaptive</span>
+      </div>
+      <div class="strength-row">
+        <span class="strength">team player</span>
+        <span class="strength">goal-oriented</span>
+        <span class="strength">ambitious</span>
+      </div>
+      <div class="strength-row">
+        <span class="strength">creative</span>
+        <span class="strength">hard-working</span>
+        <span class="strength">going the extra mile</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 class="section-header">INTERESTS</h3>
+      <hr>
+      <div class="interest-row">
+        <span class="interest-title">Travels: </span><span>Exploring the planet and experiencing new cultures.Dream destinations are New York, Iceland, Tuscany and Buenos Aires. Favourite places I have visited are Barcelona, Edinburgh, London and Paris.</span>
+      </div>
+      <div class="interest-row">
+          <span class="interest-title">Sports: </span><span>Football and handball player in amateur Greek leagues. Martial arts enthusiast, with training in Boxing, BJJ and Muay Thai.</span>
+      </div>
+      <div class="interest-row">
+        <span class="interest-title">Art: </span><span>Cinephile, avid book reader and amateur photographer.</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3 class="section-header">LANGUAGES</h3>
+      <hr>
+      <span class="language-name">Greek</span>
+      <span class="language-percent-group">
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+      </span><br>
+      <span class="language-name">English</span>
+      <span class="language-percent-group">
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-full"></i>
+      </span><br>
+      <span class="language-name">Spanish</span>
+      <span class="language-percent-group">
+        <i class="fa fa-circle language-percent-full"></i>
+        <i class="fa fa-circle language-percent-empty"></i>
+        <i class="fa fa-circle language-percent-empty"></i>
+        <i class="fa fa-circle language-percent-empty"></i>
+        <i class="fa fa-circle language-percent-empty"></i>
+      </span><br>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3 class="section-header">EDUCATION</h3>
+  <hr>
+  <div class="section-item">
+    <h5 class="section-item-header">PhD in Theoretical Physics (Incomplete)</h5>
+    <span class="section-item-employer">University of Birmingham</span>
+    <span class="section-item-date">Oct 2018 - Sept 2019</span>
+    <span class="section-item-location">Birmingham, UK</span>
+    <span class="section-item-thesis">Thesis: Ultra-strong coupling in Quantum Plasmonics</span>
+    <span class="section-item-supervisor">Supervisor: Dr Angela Demetriadou</span>
+  </div>
+
+  <div class="section-item">
+    <h5 class="section-item-header">MSc in Mathematical & Particle Physics (Distinction)</h5>
+    <span class="section-item-employer">Durham University</span>
+    <span class="section-item-date">Oct 2016 - Sept 2017</span>
+    <span class="section-item-location">Durham, UK</span>
+    <span class="section-item-courses">
+      Notable Courses: String Theory, Quantum Field Theory, Quantum Electrodynamics, General Relativity
+    </span>
+    <span class="section-item-thesis">Thesis: Holographic Entanglement Entropy and Gravitation in asymptotically AdS Spacetimes</span>
+    <span class="section-item-supervisor">Supervisor: Prof Simon Ross</span>
+  </div>
+
+  <div class="section-item">
+    <h5 class="section-item-header">BSc in Theoretical Physics (1st Class)</h5>
+    <span class="section-item-employer">University of Salford, Manchester</span>
+    <span class="section-item-date">Sept 2013 - Jun 2016</span>
+    <span class="section-item-location">Manchester, UK</span>
+    <span class="section-item-courses">
+      Notable Courses: Thermodynamics, Solid-state Physics, Quantum Mechanics, Calculus, Linear Algebra
+    </span>
+    <span class="section-item-thesis">Thesis: Spatiotemporal anti-dark solitons in systems with cubic-quintic nonlinearity</span>
+    <span class="section-item-supervisor">Supervisor: Dr Christian James</span>
+  </div>
+</div>
+
+<div class="section">
+  <h3 class="section-header">ACADEMIC ACHIEVEMENTS</h3>
+  <hr>
+  <h5 class="subsection-header">Journal Articles</h5>
+  <ul>
+    <li><span class="section-list-item-main">Relativistic and pseudorelativistic formulation of nonlinear envelope equations with spatiotemporal dispersion. II. Saturable systems, </span><span class="section-list-item-secondary">J. M. Christian, G. S. McDonald, M. J. Lundie, & A. Kotsampaseris, </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053843">Phys. Rev. A 98, 053843<a></li>
+    <li><span class="section-list-item-main">Relativistic and pseudorelativistic formulation of nonlinear envelope equations with spatiotemporal dispersion. I. Cubic-quintic systems, </span><span class="section-list-item-secondary">J. M. Christian, G. S. McDonald, & A. Kotsampaseris, </span><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053842">Phys. Rev. A 98, 053842<a></li>
+  </ul>
+  <h5 class="subsection-header">Conferences & Seminars</h5>
+  <ul>
+    <li><span class="section-list-item-main">Physics by the Lake, </span><span class="section-list-item-secondary">UK Graduate School in Condensed Matter Theory, University of Stirling, Scotland, Aug 2019</span></li>
+    <li><span class="section-list-item-main">Fresnel diffraction patterns from fractal apertures: boundary conditions and circulation, pentaflakes and islands, </span><span class="section-list-item-secondary">J. M. Christian, G. S. McDonald, A. Kotsampaseris & J. Huang, ’EOSAM 2016’, European Optical Society, Berlin</span></li>
+    <li><span class="section-list-item-main">Fresnel diffraction of light from von Koch snowflake apertures: an analysis of fractal dimension, </span><span class="section-list-item-secondary">A. Kotsampaseris, J. M. Christian & G. S. McDonald, Salford Postgraduate Annual Research Conference (SPARC 15), University of Salford, Greater Manchester, UK, 26th - 28th May 2015</span></li>
+  </ul>
+  <h5 class="subsection-header">Awards & Prizes</h5>
+  <ul>
+    <li><span class="section-list-item-main">Winton MSc Prize in Mathematical & Particle Physics, </span><span class="section-list-item-secondary">Winton Capital Management Ltd., 1st Place in the MSc in Mathematical & Particle Physics in the University of Durham, Oct 2017 - </span><a href="https://www.dur.ac.uk/physics/postgraduate/currentstudents/prizes/201718/">Durham University website</a></li>
+  </ul>
+</div>
+{% endblock %}

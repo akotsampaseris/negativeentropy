@@ -1,0 +1,53 @@
+.page-title{
+  text-align: center;
+}
+
+.post{
+  margin-top: 20px;
+}
+
+.post-meta{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.post-meta a{
+    color: #f72f2f;
+}
+
+.post-title{
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.post-title a{
+  color: #f72f2f;
+}
+
+.post-url{
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.post-url a{
+
+}
+
+.post-text{
+  font-size: 15px;
+  text-align: justify;
+}
+
+.post-image{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-image img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}

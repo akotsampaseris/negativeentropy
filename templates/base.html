@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Meta - Start -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>negativeEntropy</title>
+    <!-- Meta -  End  -->
+
+    <!-- Links - Start -->
+    <link rel="icon" href="/media/negativeentropy/images/tne-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% include 'inc/bootstrap_css.html' %}
+
+    {% block css %}
+    {% endblock %}
+    <!-- Links -  End  -->
+  </head>
+  <body class="bg-dark text-white">
+    <div class="wrapper bg-dark">
+      <!-- NavBar - Start -->
+      {% include 'inc/nav.html' %}
+      <!-- NavBar -  End  -->
+
+      <!-- Slider - Start -->
+      {% block slider %}
+      {% endblock %}
+      <!-- Slider -  End  -->
+
+      <!-- Main Content - Start -->
+      <main role="main" class="container p-4" style="margin-bottom: 100px">
+        <!-- Alerts - Start -->
+        {% include 'inc/alerts.html' %}
+        <!--Alerts -  End  -->
+
+        {% block content %}
+        Put content here!
+        {% endblock %}
+      </main>
+      <!-- Main Content -  End  -->
+
+      <!-- Footer - Start -->
+      {% include 'inc/footer.html' %}
+      <!-- Footer -  End  -->
+
+      <!-- Optional JavaScript - Start -->
+      {% include 'inc/bootstrap_js.html' %}
+      <!-- Optional JavaScript -  End  -->
+    </div>
+  </body>
+</html>

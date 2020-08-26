@@ -1,0 +1,50 @@
+.page-title{
+  text-align: center;
+}
+
+.website-category{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.website{
+}
+
+.website-title{
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.website-title a{
+  color: #f72f2f;
+}
+
+.website-url{
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.website-url a{
+  color: #fff;
+  font-weight: 700;
+}
+
+.website-description{
+  font-size: 15px;
+}
+
+.website-image{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.website-image img{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}

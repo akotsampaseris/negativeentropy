@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block slider %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" style="height: 90vh" src="/media/negativeentropy/images/tne-slider-1.png" alt="First slide">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="section">
+
+
+</div>
+<div class="section">
+  <h1 class="section-header">Recent Posts</h1>
+  <div class="row">
+  {% for post in posts %}
+    <div class="col-md-3">
+      <div class="post">
+        {% if post.image %}
+        <div class="post-image">
+          <a href="{% url 'blog:post' post.slug %}"><img src="{{ post.image.url }}" alt="{{post.title}}"></a>
+        </div>
+        {% endif %}
+        <h4 class="post-title"><a href="{% url 'blog:post' post.slug %}">{{post.title}}</a></h4>
+        <div class="post-meta">
+          <span>Category: <a class="post-category" href="{% url 'blog:category' post.category.slug %}">{{post.category}}</a></span>
+          <span>|</span>
+          <span>Date: {{post.created_at | date:"d/m/y"}}</span>
+        </div>
+        <hr>
+        <div class="post-text">{{post.text | safe | slice:":170"}}...</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
