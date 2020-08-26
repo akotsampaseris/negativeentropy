@@ -1,20 +1,24 @@
-from pathlib import Path
 import os
+from ConfigParser import RawConfigParser
+
+from pathlib import Path
 from datetime import timedelta
 from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
+config = RawConfigParser()
+config.read('settings.ini')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9otn^=&6dj%_3xh_)t#z@pmc9t&c5&ta9-i-fg_z&be$tpnooh'
+SECRET_KEY = config.get('secrets', 'SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config.get('debug', 'DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -81,11 +85,11 @@ WSGI_APPLICATION = 'negativeentropy.wsgi.application'
 
 
 # Email Server Setup
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'a.kotsampaseris@gmail.com'
-EMAIL_HOST_PASSWORD = 'KaterinaOvalTraceSecureAndroid$0!9'
-EMAIL_USE_TLS = True
+EMAIL_HOST = config.get('email', 'EMAIL_HOST')
+EMAIL_PORT = config.get('email', 'EMAIL_PORT')
+EMAIL_HOST_USER = config.get('email', 'EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
 
 
 # Database
@@ -93,8 +97,8 @@ EMAIL_USE_TLS = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': config.get('db', 'ENGINE'),
+        'NAME': BASE_DIR / config.get('db', 'NAME'),
     }
 }
 
