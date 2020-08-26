@@ -92,17 +92,24 @@ EMAIL_USE_TLS = config.getboolean('email', 'EMAIL_USE_TLS')
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.' + config.get('db', 'ENGINE'),
-        'NAME': config.get('db', 'NAME'),
-        'USER': config.get('db', 'USER'),
-        'PASSWORD': config.get('db', 'PASSWORD'),
-        'HOST': config.get('db', 'HOST'),
-        'PORT': config.get('db', 'PORT')
+if config.get('db', 'ENGINE') != 'sqlite3':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.' + config.get('db', 'ENGINE'),
+            'NAME': config.get('db', 'NAME'),
+            'USER': config.get('db', 'USER'),
+            'PASSWORD': config.get('db', 'PASSWORD'),
+            'HOST': config.get('db', 'HOST'),
+            'PORT': config.get('db', 'PORT')
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.' + config.get('db', 'ENGINE'),
+            'NAME': BASE_DIR / config.get('db', 'NAME')
+        }
+    }
 
 
 # Password validation
