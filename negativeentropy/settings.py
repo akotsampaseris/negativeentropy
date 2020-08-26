@@ -20,7 +20,7 @@ SECRET_KEY = config.get('secrets', 'SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config.getboolean('debug', 'DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['68.183.32.98', '.negativeentropy.org', 'localhost']
 
 # Application definition
 
