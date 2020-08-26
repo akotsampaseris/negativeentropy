@@ -1,5 +1,5 @@
 import os
-from ConfigParser import RawConfigParser
+from configparser import RawConfigParser
 
 from pathlib import Path
 from datetime import timedelta
@@ -9,7 +9,7 @@ from django.contrib.messages import constants as messages
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
 config = RawConfigParser()
-config.read('settings.ini')
+config.read(BASE_DIR / 'negativeentropy/settings.ini')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -18,10 +18,9 @@ config.read('settings.ini')
 SECRET_KEY = config.get('secrets', 'SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config.get('debug', 'DEBUG')
+DEBUG = config.getboolean('debug', 'DEBUG')
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -86,11 +85,10 @@ WSGI_APPLICATION = 'negativeentropy.wsgi.application'
 
 # Email Server Setup
 EMAIL_HOST = config.get('email', 'EMAIL_HOST')
-EMAIL_PORT = config.get('email', 'EMAIL_PORT')
+EMAIL_PORT = config.getint('email', 'EMAIL_PORT')
 EMAIL_HOST_USER = config.get('email', 'EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
-
+EMAIL_USE_TLS = config.getboolean('email', 'EMAIL_USE_TLS')
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
