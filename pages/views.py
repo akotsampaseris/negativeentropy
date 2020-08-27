@@ -47,8 +47,8 @@ def contact(request):
                 reply_to=[sender]
             )
 
+            email.send()
             try:
-                email.send()
                 messages.success(request, 'Thanks for your message! I will try to reply soon!')
                 return redirect('pages:contact')
             except:
