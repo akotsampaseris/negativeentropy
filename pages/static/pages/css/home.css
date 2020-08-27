@@ -38,9 +38,31 @@
 
 .slide-btn{
     background-color: #ea1646;
+    font-family: "Poppins", sans-serif;
     color: #ffd79c;
 }
 
+.section{
+  padding: 20px;
+  margin: 20px;
+  vertical-align: bottom;
+}
+
 .section-header{
+  color: #ffd79c;
+  font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+.section-text{
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-link{
+  color: #f72f2f;
+}
+
+.section-link:hover{
+  color: #f72f2f;
 }
