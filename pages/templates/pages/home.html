@@ -34,7 +34,9 @@
       <p class="section-text">My name is Antony Kotsampaseris, I am a <b>Theoretical Phyisicist</b> and a <b>Full-Stack Web Developer</b>. I have published scientific papers in <b>peer-reviewed journals</b>, written code to obtain results presented in <b>international conferences</b>, and been working as a <b>web developer</b> for several years. Visit <a class="section-link" href="/about/">here</a> to learn more about me!</p>
     </div>
     <div class="col-md-6 text-center">
-      <img src="/media/negativeentropy/images/tne-icon-about.png" alt="" width="40%">
+      <a href="{% url 'pages:about' %}">
+        <img src="/media/negativeentropy/images/tne-icon-about.png" alt="" width="40%">
+      </a>
     </div>
   </div>
 </div>
@@ -42,7 +44,9 @@
 <div class="section">
   <div class="row">
     <div class="col-md-6 text-center">
-      <img src="/media/negativeentropy/images/tne-icon-portfolio.png" alt="" width="40%">
+      <a href="{% url 'portfolio:index' %}">
+        <img src="/media/negativeentropy/images/tne-icon-portfolio.png" alt="" width="40%">
+      </a>
     </div>
     <div class="col-md-6 text-left">
       <h3 class="section-header text-right">Take a look at my work</h3>
@@ -58,7 +62,9 @@
       <p class="section-text align-middle">Along the way, I have studied in several universities and have worked with some amazing people from all around the world. I would be happy to collaborate on your next exciting open-source projects. You can go through my CV <a class="section-link" href="/cv/">here</a> and get more info about my education and my work experience!</p>
     </div>
     <div class="col-md-6 text-center">
-      <img src="/media/negativeentropy/images/tne-icon-cv.png" alt="" width="40%">
+      <a href="{% url 'cv:index' %}">
+        <img src="/media/negativeentropy/images/tne-icon-cv.png" alt="" width="40%">
+      </a>
     </div>
   </div>
 </div>
