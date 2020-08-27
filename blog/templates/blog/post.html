@@ -7,7 +7,7 @@
 
 {% block slider %}
 {% if post.image %}
-<img src="{{post.image.url}}" alt="{{post.name}}">
+<img class="d-block w-100" style="height: 90vh" src="{{post.image.url}}" alt="{{post.name}}">
 {% endif %}
 {% endblock %}
 
