@@ -13,6 +13,7 @@
 {% for website in websites %}
 {% if website.category == cat %}
   <div class="col-sm-3">
+    <a href="{{website.url}}" target="_blank">
     <div class="website">
       {% if website.image %}
       <div class="website-image">
@@ -25,6 +26,7 @@
       <p class="website-description">{{website.description}}</p>
       {% endif %}
     </div>
+    </a>
   </div>
 {% endif %}
 {% endfor %}
