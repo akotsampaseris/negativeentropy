@@ -3,7 +3,7 @@
 }
 
 .slide-overlay{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: absolute;
   top: 35%;
@@ -11,21 +11,15 @@
 
 .slide-overlay-text{
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
 }
 
 .slide-header{
   font-weight: 900;
-  font-size: 80px;
   font-family: "Poppins", sans-serif;
   box-shadow: 1px;
 }
 
-.slide-text{
-  font-size: 22px;
-  font-family: "Poppins", sans-serif;
-  color: #ffd79c;
-}
 
 .slide-header-top{
   color: #ff9f96;
@@ -35,6 +29,38 @@
   color: #ffd79c;
 }
 
+.slide-text{
+  font-family: "Poppins", sans-serif;
+  color: #ffd79c;
+}
+
+.slide-btn{
+    background-color: #ea1646;
+    font-family: "Poppins", sans-serif;
+    color: #ffd79c;
+}
+
+.section{
+  padding: 20px;
+  margin: 20px;
+  vertical-align: bottom;
+}
+
 .section-header{
+  color: #ffd79c;
+  font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+.section-text{
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-link{
+  color: #f72f2f;
+}
+
+.section-link:hover{
+  color: #f72f2f;
 }

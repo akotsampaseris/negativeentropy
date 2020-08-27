@@ -3,7 +3,7 @@
 }
 
 .slide-overlay{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: absolute;
   top: 35%;
@@ -11,7 +11,7 @@
 
 .slide-overlay-text{
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
 }
 
 .slide-header{
