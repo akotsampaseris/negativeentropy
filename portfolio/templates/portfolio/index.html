@@ -12,21 +12,19 @@
 <div class="row">
 {% for website in websites %}
 {% if website.category == cat %}
-  <div class="col-md-3">
-    <a href="{{website.url}}" target="_blank">
+  <div class="col-sm-3">
     <div class="website">
       {% if website.image %}
       <div class="website-image">
-        <img src="{{ website.image.url }}" alt="{{website.title}}">
+        <a href="{{website.url}}" target="_blank"><img src="{{ website.image.url }}" alt="{{website.title}}"></a>
       </div>
       {% endif %}
-      <h4 class="website-title">{{website.title}}</h4>
-      <p class="website-url">{{website.url}}</p>
+      <h4 class="website-title"><a href="{{website.url}}" target="_blank">{{website.title}}</a></h4>
+      <p class="website-url"><a href="{{website.url}}" target="_blank">{{website.url}}</a></p>
       {% if website.description %}
       <p class="website-description">{{website.description}}</p>
       {% endif %}
     </div>
-    </a>
   </div>
 {% endif %}
 {% endfor %}
