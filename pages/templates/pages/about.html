@@ -1,12 +1,28 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/about.css' %}">
+{% endblock %}
 
 {% block content %}
-<h1>About</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1 class="page-title">My Story</h1>
+<div class="about-section">
+  <h3 class="about-section-header">Early beginnings</h3>
+  <p class="about-section-text">
+    I grew up in a small seaside town in rural Greece, <strong>Nea Artaki</strong>, mostly playing football in the streets and working with computers, taking them apart and putting them back together <i>(most of the time)</i>... I wasn't a big fan of school, always found that it suppressed creativity and intelligence, and rewarded conformity and homogeneity. My passion at the time was football and I wanted to become a football manager, so I entered the School of Sports Science and Physical Education in the University of Athens. During my studies in Athens, I unexpectedly fell in love with <strong>Physics and Mathematics</strong> and I decided to move to the UK and become a scientist.
+  </p>
+</div>
+<div class="about-section">
+  <h3 class="about-section-header">Living in England</h3>
+  <p class="about-section-text">
+    Life in the north of England was very difficult in the beginning, with the constant rain and the grey skies. For years I was solely focused on my work, and as a result I finished in the top place in every single year of my education. During the second year of my Bachelor's degree, I was working with <strong>Dr. James Christian and Dr. Graham McDonald</strong> on <i>Fresnel diffraction patterns from fractal apertures</i>, and I wrote a computer program that made our calculations <strong><i>400 times faster</i></strong> and accelerated the analysis of the results, which were presented in the <strong>European Optical Society Annual Meeting (EOSAM 2016)</strong> in Berlin. I continued working with Dr. Christian and Dr. McDonald and what started as my Final Project became a series of papers on <strong>Spatiotemporal Solitons</strong> that were published in the <strong>Physical Review A</strong> of the <strong>Americal Physical Society</strong>. Then I took a big chance and decided to work on Particle Physics and I started my Master's degree on <strong>Particle and Mathematical Physics</strong> in the University of Durham, where I had an opportunity to work with <strong>Prof Simon Ross</strong> on <i>the AdS/CFT Correspondence and the Holographic Entanglement Entropy in AdS Spacetimes</i>, where I received the <strong>Winton MSc Prize</strong> for the top place in the Master's.
+  </p>
+</div>
+<div class="about-section">
+  <h3 class="about-section-header">Next Chapter</h3>
+  <p class="about-section-text">
+    Soon I realised that the academic path was not the best choice for me. I came back to Greece and I started working as a <strong>Junior Developer</strong> for <strong>TechnoLogic LTD</strong>, in order to gain real-life work experience and learn how to code professionally, which was much more different from coding on your own leisure. But then I was offered an opportunity to start a <strong>PhD in Quantum Plasmonics</strong> in the <strong>University of Birmingham</strong>, and I returned to England for a few months. However, I kept on working remotely for TechnoLogic LTD, and during that time I was convinced that a career in Programming was a much better choice for me. I am now back in Greece and working to continuously evolve as a programmer and one day to become an entrepreneur.
+  </p>
+</div>
 {% endblock %}
