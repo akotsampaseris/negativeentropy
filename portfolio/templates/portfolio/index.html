@@ -7,9 +7,11 @@
 
 {% block content %}
 <h1 class="page-title">My Portfolio</h1>
-<h3 class="website-category">Professional Projects</h3>
+{% for cat in cats %}
+<h3 class="website-category">{{cat.name}}</h3>
 <div class="row">
-{% for website in work_websites %}
+{% for website in websites %}
+{% if website.category == cat %}
   <div class="col-md-3">
     <div class="website">
       {% if website.image %}
@@ -22,25 +24,9 @@
       <p class="website-description">{{website.description}}</p>
     </div>
   </div>
+{% endif %}
 {% endfor %}
 </div>
 <hr>
-
-<h3 class="website-category">Side Projects</h3>
-<div class="row">
-{% for website in side_websites %}
-  <div class="col-md-3">
-    <div class="website">
-      {% if website.image %}
-      <div class="website-image">
-        <a href="{{website.url}}" target="_blank"><img src="{{ website.image.url }}" alt="{{website.title}}"></a>
-      </div>
-      {% endif %}
-      <h4 class="website-title"><a href="{{website.url}}" target="_blank">{{website.title}}</a></h4>
-      <p class="website-url"><a href="{{website.url}}" target="_blank">{{website.url}}</a></p>
-      <p class="website-description">{{website.description}}</p>
-    </div>
-  </div>
 {% endfor %}
-</div>
 {% endblock %}

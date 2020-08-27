@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .models import Post, PostCategory
 
@@ -16,8 +16,12 @@ def index(request):
 
 
 def category(request, slug):
-    cat = PostCategory.objects.get(slug=slug)
-    posts = Post.objects.filter(category=cat)
+    try:
+        cat = PostCategory.objects.get_object_or_404(slug=slug)
+        posts = Post.objects.filter(category=cat)
+    except:
+        cat = []
+        posts = []
 
     context = {
         "cat": cat,
@@ -28,7 +32,7 @@ def category(request, slug):
 
 
 def post(request, slug):
-    post = Post.objects.get(slug=slug)
+    post = Post.objects.get_object_or_404(slug=slug)
 
     context = {
         "post": post
