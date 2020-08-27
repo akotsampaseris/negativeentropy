@@ -17,12 +17,14 @@
     <div class="website">
       {% if website.image %}
       <div class="website-image">
-        <a href="{{website.url}}" target="_blank"><img src="{{ website.image.url }}" alt="{{website.title}}"></a>
+        <img src="{{ website.image.url }}" alt="{{website.title}}">
       </div>
       {% endif %}
-      <h4 class="website-title"><a href="{{website.url}}" target="_blank">{{website.title}}</a></h4>
-      <p class="website-url"><a href="{{website.url}}" target="_blank">{{website.url}}</a></p>
+      <h4 class="website-title">{{website.title}}</h4>
+      <p class="website-url">{{website.url}}</p>
+      {% if website.description %}
       <p class="website-description">{{website.description}}</p>
+      {% endif %}
     </div>
   </div>
   </a>
