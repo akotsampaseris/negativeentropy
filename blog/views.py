@@ -16,12 +16,8 @@ def index(request):
 
 
 def category(request, slug):
-    try:
-        cat = PostCategory.objects.get_object_or_404(slug=slug)
-        posts = Post.objects.filter(category=cat)
-    except:
-        cat = []
-        posts = []
+    cat = get_object_or_404(PostCategory, slug=slug)
+    posts = Post.objects.filter(category=cat)
 
     context = {
         "cat": cat,
@@ -32,7 +28,7 @@ def category(request, slug):
 
 
 def post(request, slug):
-    post = Post.objects.get_object_or_404(slug=slug)
+    post = get_object_or_404(Post, slug=slug)
 
     context = {
         "post": post
