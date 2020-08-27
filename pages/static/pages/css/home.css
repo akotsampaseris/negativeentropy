@@ -21,11 +21,6 @@
   box-shadow: 1px;
 }
 
-.slide-text{
-  font-size: 22px;
-  font-family: "Poppins", sans-serif;
-  color: #ffd79c;
-}
 
 .slide-header-top{
   color: #ff9f96;
@@ -33,6 +28,17 @@
 
 .slide-header-bottom{
   color: #ffd79c;
+}
+
+.slide-text{
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: #ffd79c;
+}
+
+.slide-btn{
+    background-color: #ea1646;
+    color: #ffd79c;
 }
 
 .section-header{
