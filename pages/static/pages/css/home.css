@@ -16,7 +16,6 @@
 
 .slide-header{
   font-weight: 900;
-  font-size: 80px;
   font-family: "Poppins", sans-serif;
   box-shadow: 1px;
 }
@@ -31,7 +30,6 @@
 }
 
 .slide-text{
-  font-size: 22px;
   font-family: "Poppins", sans-serif;
   color: #ffd79c;
 }
