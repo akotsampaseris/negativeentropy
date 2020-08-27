@@ -14,18 +14,18 @@
 {% if website.category == cat %}
   <div class="col-sm-3">
     <a href="{{website.url}}" target="_blank">
-    <div class="website">
-      {% if website.image %}
-      <div class="website-image">
-        <a href="{{website.url}}" target="_blank"><img src="{{ website.image.url }}" alt="{{website.title}}"></a>
+      <div class="website">
+        {% if website.image %}
+        <div class="website-image">
+          <a href="{{website.url}}" target="_blank"><img src="{{ website.image.url }}" alt="{{website.title}}"></a>
+        </div>
+        {% endif %}
+        <h4 class="website-title"><a href="{{website.url}}" target="_blank">{{website.title}}</a></h4>
+        <p class="website-url"><a href="{{website.url}}" target="_blank">{{website.url}}</a></p>
+        {% if website.description %}
+        <p class="website-description">{{website.description}}</p>
+        {% endif %}
       </div>
-      {% endif %}
-      <h4 class="website-title"><a href="{{website.url}}" target="_blank">{{website.title}}</a></h4>
-      <p class="website-url"><a href="{{website.url}}" target="_blank">{{website.url}}</a></p>
-      {% if website.description %}
-      <p class="website-description">{{website.description}}</p>
-      {% endif %}
-    </div>
     </a>
   </div>
 {% endif %}
