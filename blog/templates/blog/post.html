@@ -5,6 +5,12 @@
 <link rel="stylesheet" href="{% static 'blog/css/post.css' %}">
 {% endblock %}
 
+{% block slider %}
+{% if post.image %}
+<img src="{{post.image.url}}" alt="{{post.name}}">
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <h2 class="post-title">{{post.title}}</h2>
 <div class="post-meta">
