@@ -1,3 +1,40 @@
+.home-carousel{
+    top: 0%;
+}
+
+.slide-overlay{
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 35%;
+}
+
+.slide-overlay-text{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.slide-header{
+  font-weight: 900;
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 1px;
+}
+
+.slide-text{
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: #ffd79c;
+}
+
+.slide-header-top{
+  color: #ff9f96;
+}
+
+.slide-header-bottom{
+  color: #ffd79c;
+}
+
 .section-header{
   text-align: center;
 }
